@@ -1,0 +1,7 @@
+create_table("shows", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("number", "integer", {})
+	t.Column("date", "string", {})
+	t.Column("guest_id", "uuid", {})
+	t.Column("topic", "string", {})
+})

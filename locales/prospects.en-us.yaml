@@ -1,0 +1,6 @@
+- id: "prospects.created.success"
+  translation: "Prospect was successfully created."
+- id: "prospects.updated.success"
+  translation: "Prospect was successfully updated."
+- id: "prospects.destroyed.success"
+  translation: "Prospect was successfully destroyed."

@@ -1,0 +1,39 @@
+<div class="page-header">
+  <h1>Prospects</h1>
+</div>
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= newProspectsPath() %>" class="btn btn-primary">Create New Prospect</a></li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+  <th>FirstName</th>
+    <th>LastName</th>
+    <th>Email</th>
+    <th>Scheduled</th>
+    <th>Contacted</th>
+    <th>&nbsp;</th>
+  </thead>
+  <tbody>
+    <%= for (prospect) in prospects { %>
+      <tr>
+      <td><%= prospect.FirstName %></td>
+        <td><%= prospect.LastName %></td>
+        <td><%= prospect.Email %></td>
+        <td><%= prospect.Scheduled %></td>
+        <td><%= prospect.Contacted %></td>
+        <td>
+          <div class="pull-right">
+            <a href="<%= prospectPath({ prospect_id: prospect.ID }) %>" class="btn btn-info">View</a>
+            <a href="<%= editProspectPath({ prospect_id: prospect.ID }) %>" class="btn btn-warning">Edit</a>
+            <a href="<%= prospectPath({ prospect_id: prospect.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+          </div>
+        </td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+<div class="text-center">
+  <%= paginator(pagination) %>
+</div>

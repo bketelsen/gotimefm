@@ -1,0 +1,25 @@
+<div class="page-header">
+  <h1>Prospect#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= prospectsPath() %>" class="btn btn-info">Back to all Prospects</a></li>
+  <li><a href="<%= editProspectPath({ prospect_id: prospect.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li><a href="<%= prospectPath({ prospect_id: prospect.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>FirstName</strong>: <%= prospect.FirstName %>
+</p>
+<p>
+  <strong>LastName</strong>: <%= prospect.LastName %>
+</p>
+<p>
+  <strong>Email</strong>: <%= prospect.Email %>
+</p>
+<p>
+  <strong>Scheduled</strong>: <%= prospect.Scheduled %>
+</p>
+<p>
+  <strong>Contacted</strong>: <%= prospect.Contacted %>
+</p>

@@ -1,0 +1,6 @@
+- id: "guests.created.success"
+  translation: "Guest was successfully created."
+- id: "guests.updated.success"
+  translation: "Guest was successfully updated."
+- id: "guests.destroyed.success"
+  translation: "Guest was successfully destroyed."

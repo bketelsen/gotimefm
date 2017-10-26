@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-  "github.com/bketelsen/gotimefm/actions"
-  "github.com/gobuffalo/envy"
+	"github.com/bketelsen/gotimefm/actions"
+	"github.com/gobuffalo/envy"
 )
 
 func main() {
